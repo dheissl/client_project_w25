@@ -210,3 +210,8 @@ footer {
     gap: 1.25rem;
     padding: 1.25rem;
 }
+
+.current {
+    font-weight: bold;
+    text-decoration: underline;
+}
