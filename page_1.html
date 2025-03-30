@@ -12,6 +12,7 @@
     <header>
         <a class="skip-link" href="#main-content">Skip to Main Content</a>
         <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <h1 id="top">Academic Support at UMSI</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -20,11 +21,11 @@
                 <li><a href="page_3.html">CAPS</a></li>
             </ul>
         </nav>
-        <h1>Academic Support at UMSI</h1>
+        <h1 id="bottom">Academic Support at UMSI</h1>
     </header>
     
     <main id="main-content" class="grid-container">
-        <section class="section-card">
+        <section class="section-card-intro">
             <h2 class="section-title">Academic Advising Overview</h2>
             <p>Your comprehensive guide to academic advising in the BSI program. This site offers essential information for students in the Bachelor of Science in Information (BSI) program, including resources for academic advising, academic planning, and student support.</p>
             <p>Please note that this site is intended for active BSI students. If you are unable to access documents, please ensure that you are logged into your UMICH account.</p>
@@ -43,8 +44,10 @@
     
         <section class="section-card">
             <h2 class="section-title"><a href="https://sites.google.com/umich.edu/bsiacademicadvising/bsi-degree-requirements">BSI Degree Requirements</a></h2>
-            <p>The BSI program has specific requirements that guide students toward graduation. These requirements are designed to ensure students acquire the knowledge and skills needed for a successful career in Information Science.</p>
-            <img src="images/Requirements.png" alt="BSI Degree Requirements in a table">
+            <div class="Image-and-text">
+                <p>The BSI program has specific requirements that guide students toward graduation. These requirements are designed to ensure students acquire the knowledge and skills needed for a successful career in Information Science.</p>
+                <img src="images/Requirements.png" alt="BSI Degree Requirements in a table">
+            </div>
         </section>
     
         <section class="section-card-advisor">
@@ -81,8 +84,8 @@
     </main>
 
     <footer>
-        <p>University of Michigan School of Information <br> &copy; Dylan Heiss 2025</p>
+        <p>University of Michigan School of Information <br> &copy; Dylan Heiss <span id="year"></span></p>
     </footer>
-
+    <script src="js/script.js"></script>
 </body>
 </html>

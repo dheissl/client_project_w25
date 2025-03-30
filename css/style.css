@@ -105,6 +105,10 @@ h1 {
     margin-top: 0.625rem;
 }
 
+#top{
+    display: none;
+}
+
 h3 {
     font-size: 1.5rem;
     color: #004488;
@@ -214,4 +218,172 @@ footer {
 .current {
     font-weight: bold;
     text-decoration: underline;
+}
+
+div#lost {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+    /* Fixed Header */
+    header {
+        display: flex;
+        flex-direction: column; /* Stack elements */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: #00274c;
+        padding: 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    /* Wrap image and title in a container */
+    .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1rem 2rem;
+        background-color: #00274c;
+    }
+
+    header img {
+        width: auto; /* Adjusted for visibility */
+        height: 7rem; /* Prevents excessive stretching */
+    }
+
+    #top{
+        display: contents;
+    }
+
+    header h1{
+        font-size: 2.2rem;
+        color: white;
+        margin-left: 1rem;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    #bottom{
+        display: none;
+    }
+
+
+    /* Navigation Styles */
+    nav {
+        background-color: #00274c;
+
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        flex-direction: row;
+    }
+
+    nav ul li {
+        position: relative;
+        padding-left: 5px;
+        padding-right: 5px;
+        display: inline-block;
+    }
+
+    nav ul li a {
+        color: #00274c;
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 1rem 1.5rem;
+        display: block;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        background-color: white;
+    }
+
+    nav ul li a:hover {
+        background-color: #ffcb05;
+        color: #00274c;
+    }
+
+    nav ul li a.current {
+        background-color: #ffcb05;
+        color: #00274c;
+    }
+
+    /* Divider between nav items */
+    nav ul li:not(:last-child) {
+        border-right: 2px solid #dee2e6;
+    }
+
+    /* Main Content Padding Adjustment */
+    body {
+        padding-top: 160px; /* Adjust based on header height */
+    }
+
+
+
+    /* Main Content Grid */
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 2rem auto;
+    }
+
+    .section-card-intro {
+        grid-column: 1 / -1;
+    }
+
+    /* Advisor Grid */
+    .advisor-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Typography */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    /* Images */
+    .cover-img {
+        height: 300px;
+        object-position: center 30%;
+    }
+
+    figure img {
+        max-width: 50%;
+        margin: 1rem auto;
+    }
+    
+    .section-card img{
+        max-width: 50%;
+    }
+
+    .Image-and-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    p, li {
+        font-size: 1.2rem;
+    }
+
+
 }

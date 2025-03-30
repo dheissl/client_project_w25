@@ -12,6 +12,7 @@
     <header>
         <a class="skip-link" href="#main-content">Skip to Main Content</a>
         <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <h1 id="top">Counseling and Psychological Services (CAPS)</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -20,7 +21,7 @@
                 <li><a class="current" href="page_3.html">CAPS</a></li>
             </ul>
         </nav>
-        <h1>Counseling and Psychological Services (CAPS)</h1>
+        <h1 id="bottom">Counseling and Psychological Services (CAPS)</h1>
     </header>
 
     <main id="main-content" class="grid-container">
@@ -43,6 +44,19 @@
                 <li>Training Programs: CAPS offers training programs to prepare mental health professionals with practical experience and education, meeting accreditation standards and focusing on empowerment and social justice.</li>
                 <li>Service Limitations: CAPS uses a short-term therapy model and may refer students for longer-term care or specialized treatment when needs exceed our scope, such as ongoing mental health issues or severe distress.</li>
             </ul>
+        </section>
+
+        <section class="section-card">
+            <h2 class="section-title">CAPS Location</a></h2>
+            <p>CAPS front desk is located on the 4th floor of the Michigan Union, shown below.</p>
+            <iframe 
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAud6uWxkBVRDDn_VPOECDZ1BMIyoD44hs&q=530+S+State+St,+Ann+Arbor,+MI+48109"
+            width="100%" height="450" 
+            frameborder="0" style="border:0;"
+            allowfullscreen="" aria-hidden="false" tabindex="0"
+            aria-label="Interactive map showing Michigan Union location at 530 South State Street, Ann Arbor, Michigan">
+            </iframe>
+
         </section>
 
         <section class="section-card">
@@ -69,8 +83,10 @@
 
         <section class="section-card">
             <h2 class="section-title"><a href="https://caps.umich.edu/article/first-year-guide">First-Year Guide</a></h2>
-            <img src="images/Move_in.JPG" alt="A group of student volunteers pose for a group photo ahead of Move-In.">
-            <p>For first-year students, CAPS has created a resource called “Go Blue! A New Student's Guide to Surviving and Thriving at U-M.” This guide offers valuable mental health tips to help you transition smoothly into university life.</p>
+            <div class="Image-and-text">
+                <img src="images/Move_in.JPG" alt="A group of student volunteers pose for a group photo ahead of Move-In.">
+                <p>For first-year students, CAPS has created a resource called “Go Blue! A New Student's Guide to Surviving and Thriving at U-M.” This guide offers valuable mental health tips to help you transition smoothly into university life.</p>
+            </div>
         </section>
 
         <section class="section-card">
@@ -86,8 +102,9 @@
     </main>
 
     <footer>
-        <p>University of Michigan School of Information <br> &copy; Dylan Heiss 2025</p>
+        <p>University of Michigan School of Information <br> &copy; Dylan Heiss <span id="year"></span></p>
     </footer>
+    <script src="js/script.js"></script>
 
 </body>
 </html>

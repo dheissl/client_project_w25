@@ -12,6 +12,7 @@
     <header>
         <a class="skip-link" href="#main-content">Skip to Main Content</a>
         <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <h1 id="top">Student Success Portal</h1>
         <nav>
             <ul>
                 <li><a class="current" href="index.html">Home</a></li>
@@ -20,7 +21,8 @@
                 <li><a href="page_3.html">CAPS</a></li>
             </ul>
         </nav>
-        <h1>Student Success Portal</h1>
+        <h1 id="bottom">Student Success Portal</h1>
+        
     </header>
 
     <main id="main-content" class="grid-container">
@@ -41,19 +43,23 @@
             <p>Keeping your body healthy is essential for success. The University of Michigan offers numerous resources to help you stay in top physical condition:</p>
             <article>
                 <h3>University Health Service (UHS)</h3>
-                <figure>
-                    <img src="images/UHS.jpg" alt="University Health Services building">
-                    <figcaption>University Health Services Building</figcaption>
-                </figure>
-                <p>University Health Service (UHS): Access comprehensive medical care, including routine check-ups, vaccinations, and specialist referrals.</p>
+                <div class="Image-and-text">
+                    <figure>
+                        <img src="images/UHS.jpg" alt="University Health Services building">
+                        <figcaption>University Health Services Building</figcaption>
+                    </figure>
+                    <p>University Health Service (UHS): Access comprehensive medical care, including routine check-ups, vaccinations, and specialist referrals.</p>
+                </div>
             </article>
             <article>
                 <h3>Recreational Sports</h3>
-                <figure>
-                    <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="A student wears a UMSI backpack in fall on the drag.">
-                    <figcaption>UMSI out in the fall!</figcaption>
-                </figure>
-                <p>Participate in various fitness programs, sports clubs, and use of gym facilities to stay active and healthy.</p>
+                <div class="Image-and-text">
+                    <figure>
+                        <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="A student wears a UMSI backpack in fall on the drag.">
+                        <figcaption>UMSI out in the fall!</figcaption>
+                    </figure>
+                    <p>Participate in various fitness programs, sports clubs, and use of gym facilities to stay active and healthy.</p>
+                </div>
             </article>
         </section>
 
@@ -92,8 +98,8 @@
     </main>
 
     <footer>
-        <p>University of Michigan School of Information <br> &copy; Dylan Heiss 2025</p>
+        <p>University of Michigan School of Information <br> &copy; Dylan Heiss <span id="year"></span></p>
     </footer>
-
+    <script src="js/script.js"></script>
 </body>
 </html>
